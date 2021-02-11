@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+html {
+    font-size: 10px;
+    background-color: white;
+    
+}
+
+body {
+    font-family: 'East Sea Dokdo', cursive;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(163,216,230);
+}
+
+.cropped {
+    
+    margin: auto;
+}
+
+
+#header-img {
+    margin-top: -2rem;
+    height: 500px;
+}
+
+.nav-bar {
+    background-color: black;
+    position: fixed;
+    overflow-x: visible;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 5rem;
+    min-height: 6%;
+    max-height: 50px;
+    z-index: 99;
+}
+
+.nav-bar > ul {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-left: 2%;
+}
+.nav-bar li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration:none;
+  
+}
+
+
+#cart {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    font-size: 1.1em;
+    padding-right: 2%;
+}
+
+/*Section CSS Rules*/
+
+.container {
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.container h2 {
+    font-size: 6rem;
+    margin: 0;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.welcome {
+    position: relative;
+    background-color: blanchedalmond;
+    margin-top: -8.75rem;
+    margin-bottom: 0;
+    padding-top: 4.5rem;
+    padding-bottom: 2rem;
+    overflow-x: invisible;
+    
+}
+
+#products h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 8.0rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+/*Products styling*/
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,500px));
+    justify-content: center;
+    gap: 4rem;
+    padding: 3rem;
+    overflow: hidden;   
+}
+
+.product-display {
+    display: flex;
+    flex-direction: column;
+    border: thick double black;
+    border-radius: 2rem;
+    padding: 2rem;
+        
+}
+
+.product-display label {
+    margin: auto;
+    font-size: 6rem;
+}
+
+.product-display p {
+    margin: auto;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.container-product-img {
+    overflow: hidden;
+    width: 87%;
+    height: 300px;
+    border: .2rem solid black;
+    border-radius: 10%;
+    margin: auto;
+
+}
+
+.display-image {
+    max-width: 400px;
+}
+
+.addtocart {
+    font-size: 4rem;
+    font-family: 'East Sea Dokdo', cursive;
+    
+}
+
+#product2 {
+    height: 300px;
+    object-fit: cover;
+    object-position: 30%;
+}
+
+/*A lesson on soap*/
+
+.lesson {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+
+.container-video {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-video > iframe {
+    margin: 2rem 5rem;
+}
+
+/*Why Us?*/
+.why-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#why-us > p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4rem;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+/*Mailing List*/
+
+.maillist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+#email {
+    line-height: 2.25rem;
+    text-align: center;
+    width: 20%;
+    margin-bottom: 3rem;
+}
+
+#submit {
+    padding: 0.5rem 1rem;
+    font-size: 2.7rem;
+    font-family: 'East Sea Dokdo', cursive;
+    margin-bottom: 10rem;
+}
+
+@media (max-width: 550px) {
+    
+    #header-img {
+        width: 320px;
+        height: 320px;
+        margin-top: 1rem;
+    }
+
+    .welcome {
+        margin-top: -5rem;
+        padding: 0;
+    }
+    #products h2 {
+        font-size: 6em;
+        padding-top: .3em;
+        padding-bottom: 1rem;
+        line-height: .9em;
+    }
+    
+    .container p {
+        padding: 0 .9em;
+        
+    }
+
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(20rem,350px));
+    }
+
+    .container-product-img {
+        overflow: hidden;
+        width: 87%;
+        height: 200px;
+        border: .2rem solid black;
+        border-radius: 10%;
+        margin: auto;
+        
+    }
+
+    .addtocart {
+        font-size: 4rem;
+        font-family: 'East Sea Dokdo', cursive;   
+    }
+ 
+    .display-image {
+        max-width: 270px;
+        
+    }
+
+    #product2 {
+        height: 200px;
+        object-fit: cover;
+        object-position: 30%;
+    }
+
+    #email {
+        line-height: 3.5rem;
+        text-align: center;
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+
+    .nav-bar {
+        font-size: calc(22px + (32-22) * (100vw - 320px) / (550-320));
+    }
+}
+
